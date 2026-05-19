@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notesListFragment">
+
+    <!-- Destination 1: Notes List Screen -->
+    <fragment
+        android:id="@+id/notesListFragment"
+        android:name="com.example.mobile_lab.NotesListFragment"
+        android:label="Notes List"
+        tools:layout="@layout/fragment_notes_list">
+        <action
+            android:id="@+id/action_notesListFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <!-- Destination 2: Editor Screen -->
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.example.mobile_lab.EditNoteFragment"
+        android:label="Edit Note"
+        tools:layout="@layout/fragment_edit_note">
+        <argument
+            android:name="noteId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>

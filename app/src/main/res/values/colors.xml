@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary Theme Colors -->
+    <color name="primary">#8A2387</color>
+    <color name="primary_dark">#580E51</color>
+    <color name="accent">#E94057</color>
+    
+    <!-- Beautiful Pastel Card Colors -->
+    <color name="note_white">#FFFFFFFF</color>
+    <color name="note_peach">#FFE3D8</color>
+    <color name="note_yellow">#FFF7C2</color>
+    <color name="note_green">#D4F0D5</color>
+    <color name="note_blue">#D3E9FA</color>
+    <color name="note_purple">#EAD6FD</color>
+</resources>
